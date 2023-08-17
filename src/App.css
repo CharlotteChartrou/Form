@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Montserrat:ital,wght@0,200;0,700;1,200&family=Roboto:wght@100;400;700&display=swap");
+
+.container {
+  width: 1084px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+body {
+  background-color: #f7dde1;
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  font-size: 35px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+}
+footer {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  background-color: #5c47d3;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+footer p {
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+main {
+  height: 700px;
+  background-color: white;
+  margin-top: 30px;
+}
+
+section {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  height: 446px;
+  width: 300px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 10px;
+}
+
+input {
+  height: 40px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+form button {
+  border-color: #5c47d3;
+  background-color: #5c47d3;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  height: 35px;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+}
+
+.results > div {
+  width: 250px;
+  background-color: #f2f2f2;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+form button:hover {
+  cursor: pointer;
+}
