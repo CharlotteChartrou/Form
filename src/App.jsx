@@ -9,21 +9,12 @@ function App() {
   const [password, setPassword] = useState("");
   const [validpassword, setValidpassword] = useState("");
   const [showErrorMessage, setShowErrorMessage] = useState(false);
+  const [showResult, setShowResult] = useState();
 
   const handleSubmit = (event) => {
     event.preventDefault();
     setShowErrorMessage(false);
     if (password === validpassword) {
-      <div className="results">
-        <h1>Results</h1>
-        <div>
-          <span>Name: {setUsername}</span>
-          <span>Email: {setEmail}</span>
-          <span>Password: {setPassword}</span>
-          <button className="back-button">Edit Your information</button>
-        </div>
-      </div>;
-      alert("Vous avez créé votre compte");
     } else {
       setShowErrorMessage(true);
     }
@@ -31,7 +22,7 @@ function App() {
   return (
     <>
       <main>
-        <section>
+        <section className="form">
           <h1>Create Account</h1>
           <form onSubmit={handleSubmit}>
             <span>Name</span>
@@ -71,6 +62,16 @@ function App() {
               <span style={{ color: "red" }}>
                 Les deux mot de passe ne sont pas identiques
               </span>
+            )}
+            {showErrorMessage === false && (
+              <div className="results">
+                <h1>Results</h1>
+
+                <span>Name: {setUsername}</span>
+                <span>Email: {setEmail}</span>
+                <span>Password: {setPassword}</span>
+                <button className="back-button">Edit Your information</button>
+              </div>
             )}
           </form>
         </section>
